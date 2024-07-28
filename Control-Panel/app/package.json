@@ -1,0 +1,17 @@
+{
+    "name": "AhMyth-Plus",
+    "description": "Android Remote Administration Tool",
+    "author": "Venom Dino <venomdino@outlook.com>",
+    "productName": "AhMyth-Plus",
+    "version": "1.0.0",
+    "homepage": "https://github.com/VenomDino/AhMyth-Plus",
+    "main": "main.js",
+    "dependencies": {
+        "angular": "1.5.8",
+        "angular-route": "1.5.8",
+        "fs-extra": "^1.0.0",
+        "homedir": "^0.6.0",
+        "semantic-ui": "2.2.6",
+        "socket.io": "1.4.5"
+    }
+}

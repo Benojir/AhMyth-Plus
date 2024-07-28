@@ -1,0 +1,41 @@
+<div class="ui {{load}} segment h100" style="overflow: scroll; height: 400px;" id="parent">
+    <table class="ui fixed table">
+        <thead>
+            <tr>
+                <th colspan="2">
+                    <div class="ui label">
+                        <i class="mail icon"></i> <span ng-bind="totalAppsSize"></span>
+                        <span class="detail">Apps</span>
+                    </div>
+                </th>
+
+                <th colspan="2">
+                    <div class="right aligned">
+                        <a class="ui red label" ng-click="SaveAppInfo()">
+                            <i class="save icon"></i> Save
+                        </a>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody infinite-scroll="increaseLimit()" infinite-scroll-container='"#parent"'>
+            <tr ng-repeat="app in appsList | limitTo:barLimit">
+                <td>
+                    <b>
+                        <span style="color: red;" ng-if="app.appName==''">No App Name</span>
+                        <span ng-if="app.appName!=null" ng-bind="app.appName"></span>
+                    </b>
+                </td>
+                <td>
+                    <span ng-if="app.packageName!=null" ng-bind="app.packageName"></span>
+                </td>
+                <td class="center aligned">
+                    <span ng-if="app.versionName!=null" ng-bind="app.versionName"></span>
+                </td>
+                <td class="right aligned">
+                    <button ng-click="RunApp(app.appName,app.packageName)" class="ui green button"><i class="play icon"></i> Run</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

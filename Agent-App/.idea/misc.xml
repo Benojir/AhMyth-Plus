@@ -1,0 +1,22 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/My_Files_Pogramms/Android_Projects/AhMyth-Custom-RAT/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.311" />
+        <entry key="..\:/My_Files_Pogramms/Android_Projects/AhMyth-Custom-RAT/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/My_Files_Pogramms/Android_Projects/AhMyth-Custom-RAT/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.311" />
+        <entry key="..\:/My_Files_Pogramms/Android_Projects/AhMyth-Custom-RAT/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.311" />
+        <entry key="..\:/My_Files_Pogramms/Android_Projects/AhMyth-Custom-RAT/app/src/main/res/xml/device_admin.xml" value="0.36666666666666664" />
+        <entry key="..\:/My_Files_Pogramms/Android_Projects/UmarVPN/MyApplication/app/src/main/res/drawable/ic_launcher_background2.xml" value="0.311" />
+        <entry key="..\:/My_Files_Pogramms/Android_Projects/UmarVPN/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/My_Files_Pogramms/Android_Projects/UmarVPN/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.311" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

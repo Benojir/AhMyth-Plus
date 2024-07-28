@@ -1,0 +1,30 @@
+{
+    "main": "./app/main.js",
+    "devDependencies": {
+        "electron": "^9.4.1",
+        "electron-builder": "^22.14.13",
+        "electron-packager": "^15.2.0",
+        "speaker": "^0.5.4",
+        "wav": "^1.0.2"
+    },
+    "license": "GNU GPLv3",
+    "build": {
+        "appId": "Ahmyth.android.rat.plus",
+        "win": {
+            "publisherName": "Venom Dino",
+            "icon": "build/icon.ico"
+        },
+        "asarUnpack": "**/app/Factory/**/*"
+    },
+    "scripts": {
+        "start": "npx electron ./app",
+        "clean": "rm -rf ./dist",
+        "build": "npm run build:linux && npm run build:win",
+        "build:linux": "npm run build:linux32 && npm run build:linux64",
+        "build:linux32": "npx electron-builder --linux deb --ia32",
+        "build:linux64": "npx electron-builder --linux deb --x64",
+        "build:win": "npm run build:win32 && npm run build:win64",
+        "build:win32": "npx electron-builder --win --ia32",
+        "build:win64": "npx electron-builder --win --x64"
+    }
+}
