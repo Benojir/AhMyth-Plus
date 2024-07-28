@@ -1,7 +1,5 @@
 # AhMyth Plus
 
-# This repo is no longer maintainance. Please visit this repo for upcoming updates of AhMyth-Plus <a href="https://github.com/Benojir/AhMyth-Plus">https://github.com/Benojir/AhMyth-Plus</a>
-
 AhMyth Plus: A modified, bug-fixed, and feature-enhanced version of the discontinued open-source Android remote administration tool. Experience the extended capabilities and improved performance in this revamped edition.
 
 (Please star ⭐ mark this project to support)
